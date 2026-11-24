@@ -39,7 +39,7 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/zesks/sihello:v4.16.2-sihello.2
+            ghcr.io/zesks/sihello:v4.16.2-sihello.3
             ghcr.io/zesks/sihello:latest-sihello
           cache-from: type=gha
           cache-to: type=gha,mode=max
