@@ -34,13 +34,9 @@ export default {
       });
     },
     shouldShowBanner() {
-      return (
-        !this.userDismissedBanner &&
-        this.globalConfig.displayManifest &&
-        this.updateAvailable &&
-        !this.isVersionNotificationDismissed(this.latestChatwootVersion) &&
-        this.isAdmin
-      );
+      // SiHello: upstream Chatwoot version checks do not apply to this
+      // fork; SiHello manages its own releases, so this banner stays off.
+      return false;
     },
   },
   methods: {
